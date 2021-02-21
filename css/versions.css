@@ -74,6 +74,7 @@ body.host_version .checkdomain {
     background-color: #fff;
     padding: 30px 0px;
     text-align: left;
+    height: 100%;
 }
 
 body.host_version .checkdomain {
