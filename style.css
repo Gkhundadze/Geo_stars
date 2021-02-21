@@ -23,14 +23,14 @@
 
 body {
     /* color: #333333; */
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Rubik', sans-serif;
     line-height: 1;
     background-color: aquamarine;
 }
 
 body.demos .section {
-    background: url(images/bg.png) repeat top center #f2f3f5;
+    /* background: url(images/bg.png) repeat top center #f2f3f5; */
 }
 
 body.demos .section-title img {
@@ -254,7 +254,7 @@ a img.aligncenter {
 }
 
 .wp-caption p.wp-caption-text {
-    font-size: 11px;
+    font-size: 14px;
     line-height: 17px;
     margin: 0;
     padding: 0 4px 5px;
@@ -468,12 +468,12 @@ a img.aligncenter {
 
 .top-navbar .bg-light{
     background: rgb(18,42,153);
-    background: linear-gradient(90deg, rgba(18,42,153,1) 0%, rgba(128,132,89,1) 31%, rgba(255,236,15,1) 66%);
+    background: linear-gradient(90deg, rgba(18,42,153,1) 0%, rgba(226,223,13,1) 46%, rgba(222,10,218,1) 95%);
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-link{
 	color: #ffffff;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 500;
 }
 
@@ -488,8 +488,8 @@ a img.aligncenter {
 	position: relative;
 	display: block;
 	line-height: 30px;
-	letter-spacing: 0px;
-	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-transform: capitalize;
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-item::after {
@@ -564,7 +564,7 @@ a img.aligncenter {
 	left: 40%;
 }
 .top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link{
-	color: #eea412;
+	color: #ecddbf;
 }
 .top-navbar .navbar-light .navbar-nav .nav-item.active .nav-link::after{
 	opacity: 1;
@@ -580,7 +580,7 @@ a img.aligncenter {
 	left: 40%;
 }
 .top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover{
-	color: #eea412;
+	color: #ffce3c;
 }
 .top-navbar .navbar-light .navbar-nav .nav-item .nav-link:hover::after{
 	opacity: 1;
@@ -626,9 +626,10 @@ a img.aligncenter {
 }
 
 .top-navbar .navbar-light .navbar-nav li .dropdown-menu a:hover{
+    color: #145d80 !important;
 	/* background: #eea412; */
-    background: rgb(18,42,153);
-    background: linear-gradient(90deg, rgba(18,42,153,1) 0%, rgba(128,132,89,1) 31%, rgba(222,205,10,1) 68%);color: #ffffff;
+    /* background: rgb(18,42,153); */
+    /* background: linear-gradient(90deg, rgba(18,42,153,1) 0%, rgba(14,226,13,1) 53%, rgba(222,10,218,1) 92%); */
 }
 
 .navbar-right li a{
@@ -682,9 +683,10 @@ a img.aligncenter {
 
 
 .navbar-toggler{
-	background: #ffffff;
-	border-radius: 0px;
-	padding: 10px 10px;
+	background: #681cbe;
+    border-color: #333333;
+	border-radius: 5px;
+	padding: 12px 12px;
 }
 
 .navbar-toggler .icon-bar {
@@ -703,7 +705,7 @@ a img.aligncenter {
 }
 
 .navbar-toggler:hover .icon-bar{
-	background: #ffffff;
+	background: #c9bcbc;
 }
 .listRight {
     left: auto !important;
@@ -729,9 +731,8 @@ a img.aligncenter {
   .footer {
     padding: 15px 0 10px !important;
     color: #cccccc;
-	  background: rgb(18,42,153);
-    background: linear-gradient(90deg, rgba(18,42,153,1) 0%, rgba(128,132,89,1) 31%, rgba(222,205,10,1) 68%);color: #ffffff;
-    position: absolute;
+	background: rgb(18,42,153);
+    background: linear-gradient(90deg, rgba(18,42,153,1) 0%, rgba(226,223,13,1) 46%, rgba(222,10,218,1) 95%); position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
@@ -753,7 +754,7 @@ a img.aligncenter {
 .footer .widget-title h3 {
     color: #fff;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 24px;
     padding: 0;
     margin: 0;
     line-height: 1 !important;
@@ -862,7 +863,7 @@ a img.aligncenter {
     background-color: #181818;
     border: none;
     font: inherit;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: normal;
     color: #999;
     width: 400px;
@@ -924,7 +925,7 @@ a img.aligncenter {
 	width: 32px;
 	height: 32px;
 	display: block;
-	font-size: 22px;
+	font-size: 24px;
 	text-align: center;
 	line-height: 32px;
 	border-radius: 2px;
