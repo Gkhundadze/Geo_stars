@@ -1,221 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<!-- Basic -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- Mobile Metas -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Site Metas -->
-<title>Geo Stars</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content="">
-
-
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<!-- Site CSS -->
-<link rel="stylesheet" href="style.css">
-<!-- ALL VERSION CSS -->
-<link rel="stylesheet" href="css/versions.css">
-<!-- Responsive CSS -->
-<link rel="stylesheet" href="css/responsive.css">
-<!-- Custom CSS -->
-<link rel="stylesheet" href="css/custom.css">
-
+<!-- {% load static %} -->
+<html lang="en" dir="ltr">
+<head>
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- ფონტები -->
+<link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css">
+  <link rel="stylesheet" href="main.css">
 </head>
+<body>
+  <!-- {% include "quiz/navbar.html" %} -->
+<section id="section-jumbotron" class="mb-0 jumbotron-fluid d-flex justify-content-center align-items-center" style='font-family: "BPG Arial Caps", sans-serif;'>
+  <div class="container text-center">
+    <h1 class="display-1 text-info">Let's Start</h1>
+    <p class="display-4 d-sm-block">დატესტე შენი უნარები და გახდი სტიპენდიანტი.</p>
+    <p class="lead">ჩვენ ვატარებთ ტესტირებებს სხვადასხვა საგნებში.</p>
 
-<body class="host_version">
-    <!-- Start header -->
-    <header class="top-navbar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand geo-stars-logo text-light" href="#">Geo Stars</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
-                    aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbars-host">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active"><a class="nav-link" href="index.html">მთავარი</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Teacher</a></li>
-                       
-                        <li class="nav-item"><a class="nav-link" href="#">Student</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Admin</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li> -->
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right dropdown ">
-                        <li class="nav-item dropdown pb-0 mb-3">
-							<a class="nav-link dropdown-toggle log btn-outline-success rounded px-1" href="#" id="dropdown-a" data-toggle="dropdown">პროფილი </a>
-							<div class="dropdown-menu listRight" aria-labelledby="dropdown-a">
-								<a class="dropdown-item dropdown-options" href="blog.html">მასწავლებელი </a>
-								<a class="dropdown-item dropdown-options" href="blog-single.html">მოსწავლე</a>
-							</div>
-						</li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        
-    </header>
-    <!-- End header -->
+    
 
-    <div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel" data-pause="hover" data-interval="false" >
-		<!-- Indicators -->
-		<ol class="carousel-indicators">
-			<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselExampleControls" data-slide-to="1"></li>
-			<li data-target="#carouselExampleControls" data-slide-to="2"></li>
-		</ol>
-		<div class="carousel-inner" role="listbox">
-			<div class="carousel-item active">
-				<div id="home" class="first-section" style="background-image:url('images/main_slider/book.jpg');">
-					<div class="dtab">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-12 col-sm-12 text-right">
-									<div class="big-tagline">
-										<h2><strong>Geo Stars </strong> გაიარე ტესტირება აქ</h2>
-										<p class="lead">დატესტე შენი უნარები და გახდი სტიპენდიანტი. </p>
-											<a href="#" class="hover-btn-new"><span>კონტაქტი</span></a>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<a href="#" class="hover-btn-new"><span>დაწვრილებით</span></a>
-									</div>
-								</div>
-							</div><!-- end row -->            
-						</div><!-- end container -->
-					</div>
-				</div><!-- end section -->
-			</div>
-			<div class="carousel-item">
-				<div id="home" class="first-section" style="background-image:url('images/main_slider/book.jpg');">
-					<div class="dtab">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-12 col-sm-12 text-left">
-									<div class="big-tagline">
-										<h2><strong>Geo Stars </strong> გაიარე ტესტირება აქ</h2>
-										<p class="lead" data-animation="animated fadeInLeft">დატესტე შენი უნარები და გახდი სტიპენდიანტი. </p>
-											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<a href="#" class="hover-btn-new"><span>Read More</span></a>
-									</div>
-								</div>
-							</div><!-- end row -->            
-						</div><!-- end container -->
-					</div>
-				</div><!-- end section -->
-			</div>
-			<div class="carousel-item">
-				<div id="home" class="first-section" style="background-image:url('images/main_slider/book.jpg');">
-					<div class="dtab">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-12 col-sm-12 text-center">
-									<div class="big-tagline">
-										<h2><strong>Geo Stars </strong> გაიარე ტესტირება აქ</h2>
-										<p class="lead" data-animation="animated fadeInLeft">დატესტე შენი უნარები და გახდი სტიპენდიანტი.</p>
-											<a href="#" class="hover-btn-new"><span>Contact Us</span></a>
-											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-											<a href="#" class="hover-btn-new"><span>Read More</span></a>
-									</div>
-								</div>
-							</div><!-- end row -->            
-						</div><!-- end container -->
-					</div>
-				</div><!-- end section -->
-			</div>
-			<!-- Left Control -->
-			<a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-				<span class="fa fa-angle-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-
-			<!-- Right Control -->
-			<a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-				<span class="fa fa-angle-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-	</div>
-
-
-
-
-    <!-- Footer Starts -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-xs-12">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3>ჩვენს შესახებ</h3>
-                        </div>
-                        <p>ინფორმაცია საიტის/ორგანიზაციის შესახებ</p>   
-						<div class="footer-right icons-down">
-							<ul class="footer-links-soi">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-github"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-							</ul><!-- end links -->
-						</div>						
-                    </div><!-- end clearfix -->
-                </div><!-- end col -->
-
-				<div class="col-lg-4 col-md-4 col-xs-12">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3>საჭირო ლინკები</h3>
-                        </div>
-                        <ul class="footer-links">
-                            <li><a href="#">მთავარი</a></li>
-                            <li><a href="#">Teacher</a></li>
-                            <li><a href="#">Student</a></li>
-							<li><a href="#">Admin</a></li>
-                        </ul><!-- end links -->
-                    </div><!-- end clearfix -->
-                </div><!-- end col -->
-				
-                <div class="col-lg-4 col-md-4 col-xs-12">
-                    <div class="widget clearfix">
-                        <div class="widget-title">
-                            <h3>საკონტაქტო ინფორმაცია</h3>
-                        </div>
-
-                        <ul class="footer-links">
-                            <li><a href="mailto:#">იმეილი :</a></li>
-                            <li><a href="#">წებ გვერდი :</a></li>
-                            <li>მისამართი :</li>
-                            <li>ტელეფონი :</li>
-                        </ul><!-- end links -->
-                    </div><!-- end clearfix -->
-                </div><!-- end col -->
-				
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </footer>
-    <!-- end footer -->
-
-    <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
-    <script src="js/timeline.min.js"></script>
-    <script>
-        timeline(document.querySelectorAll('.timeline'), {
-            forceVerticalMode: 700,
-            mode: 'horizontal',
-            verticalStartPosition: 'left',
-            visibleItems: 4
-        });
-    </script>
+    <p class="lead">დარეგისტრირდი თუ არგაქვს ექაუნთი და მიიღე მონაწილება ტესტირებაში შენთვის სასურველ საგანზე .</p>
+    <p><strong> შენი წარმატება იწყება აქ !</strong></p>
+    <a href="/student/studentsignup" class="btn btn-lg btn-warning"><i class="fa fa-user-plus" aria-hidden="true"></i> რეგისტრაცია</a>
+    
+  </div>  
+</section>
+  <!-- {% include "quiz/footer.html" %} -->
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    
+<!-- {% extends "base.html" %}
+{% load static %}
+{% block body %}
+{% include "quiz/navbar.html" %} -->
+
+<div class="container">
+<div class="d-flex justify-content-center flex-column">
+  <div>
+    <button class="btn btn-warning col-12 fs-3 register_choice rounded text-dark"  type="button" onclick="window.location.href='/student/studentclick';">მოსწავლე</button>
+  </div>
+  <div>
+    <button class="btn btn-danger col-12 fs-3 register_choice rounded" type="button"  type="button" onclick="window.location.href='/teacher/teacherclick';">მასწავლებელი</button>
+  </div>
+  </div>
+</div>
+  <!-- {% include "quiz/footer.html" %}
+  {% endblock %} -->
+
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
