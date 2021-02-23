@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200");
+body, html {
+height: 60%;
+margin: 0;
+font-family: "Raleway", sans-serif;
+font-weight: 200;
+} 
+
+body {
+    /* background: rgb(15,15,26); */
+    /* background: radial-gradient(circle, rgba(15,15,26,1) 0%, rgba(0,123,255,1) 53%, rgba(15,15,26,1) 92%); */
+/* display: flex; */
+/* align-items: center; */
+/* justify-content: center; */
+/* flex-direction: column; */
+}
+.custom-height{
+    height: 100vh;
+}
+
+.digit-group input {
+width: 50px;
+height: 70px;
+background-color: #18182a;
+border: none;
+line-height: 50px;
+text-align: center;
+font-size: 24px;
+font-family: "Raleway", sans-serif;
+font-weight: 200;
+color: white;
+margin: 0 2px;
+}
+.digit-group .splitter {
+padding: 0 5px;
+color: white;
+font-size: 24px;
+}
+
+.prompt {
+margin-bottom: 20px;
+font-size: 20px;
+color: white;
+}
+.verify-size{
+    width: 220px;
+}
+.center-item-size{
+    width: 50px;
+    margin: 0 auto;
+}
+.bg-cover-stars{
+    background-color: #0f0f1a;
+    background-image: url(../../images/covers/stars_background_verify.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
