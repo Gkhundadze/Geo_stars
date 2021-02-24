@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,84 +9,50 @@
 </head>
 
 <body>
-<div class="custom-height bg-sms-auth-cover">
+  <div class="custom-height bg-sms-auth-cover">
     <!-- {% extends "base.html" %} -->
-  <!-- {% load static %} -->
-  <!-- {% block body %} -->
-  <!-- {% include "quiz/navbar.html" %} -->
+    <!-- {% load static %} -->
+    <!-- {% block body %} -->
+    <!-- {% include "quiz/navbar.html" %} -->
 
 
-  <!-- {% include 'messages.html' %} -->
-  <div class="container">
-    <form method="POST" enctype="multipart/form-data" class="digit-group d-flex flex-column" data-group-name="digits" data-autosubmit="false"
-    autocomplete="off">
-    <h2 class="text-light align-self-center mt-3 mb-4">შეიყვანეთ SMS კოდი</h2>
-    <!-- {% csrf_token %} -->
-    <div class="align-self-center mb-4">
-      <!-- ინფუთებზე ვალიდაციები -->
-      <input class="border-0 rounded text-light fs-1 text-center line-height-base sms-auth-input-props" required maxlength="1" type="text" id="digit-1" name="otp1" data-next="digit-2" onkeypress="isInputNumber(event)" />
-      <input class="border-0 rounded text-light fs-1 text-center line-height-base sms-auth-input-props" required maxlength="1" type="text" id="digit-2" name="otp2" data-next="digit-3" data-previous="digit-1"
-        onkeypress="isInputNumber(event)" />
-      <input class="border-0 rounded text-light fs-1 text-center line-height-base sms-auth-input-props" required maxlength="1" type="text" id="digit-3" name="otp3" data-next="digit-4" data-previous="digit-2"
-        onkeypress="isInputNumber(event)" />
-      <input class="border-0 rounded text-light fs-1 text-center line-height-base sms-auth-input-props" required maxlength="1" type="text" id="digit-4" name="otp4" data-next="digit-5" data-previous="digit-3"
-        onkeypress="isInputNumber(event)" />
+    <!-- {% include 'messages.html' %} -->
+    <div class="container">
+      <form method="POST" enctype="multipart/form-data" class="digit-group d-flex flex-column" data-group-name="digits"
+        data-autosubmit="false" autocomplete="off">
+        <h2 class="text-light align-self-center mt-3 mb-4">შეიყვანეთ SMS კოდი</h2>
+        <!-- {% csrf_token %} -->
+        <div class="align-self-center mb-4">
+          <!-- ინფუთებზე ვალიდაციები -->
+          <input class="border-0 rounded text-light fs-1 text-center line-height-base sms-auth-input-props" type="text"
+            id="digit-1" name="otp1" data-next="digit-2" onkeypress="isInputNumber(event)" />
+          <input class="border-0 rounded text-light fs-1 text-center line-height-base sms-auth-input-props" type="text"
+            id="digit-2" name="otp2" data-next="digit-3" data-previous="digit-1" onkeypress="isInputNumber(event)" />
+          <input class="border-0 rounded text-light fs-1 text-center line-height-base sms-auth-input-props" type="text"
+            id="digit-3" name="otp3" data-next="digit-4" data-previous="digit-2" onkeypress="isInputNumber(event)" />
+          <input class="border-0 rounded text-light fs-1 text-center line-height-base sms-auth-input-props" type="text"
+            id="digit-4" name="otp4" data-next="digit-5" data-previous="digit-3" onkeypress="isInputNumber(event)" />
+        </div>
+        <button class='btn btn-warning align-self-center verify-button'>ვერიფიკაცია</button>
+      </form>
+      <form method='get' action=' ' class="center-item-width mx-auto">
+        <input type="submit" value="Next" name="Next" class="btn btn-primary mt-1" />
+      </form>
+      <p class="text-warning fs-3 text-center">შეიყვანეთ ოთხნიშნა ციფრი რომელიც გამოგეგზავათ მობილურზე:
+        <!-- {{request.session.phone}} -->
+      </p>
     </div>
-
-    <button class='btn btn-warning align-self-center verify-button'>ვერიფიკაცია</button>
-
-
-  </form>
-  <form method='get' action=' ' class="center-item-width mx-auto">
-    <input type="submit" value="Next" name="Next" class="btn btn-primary mt-1"/>
-  </form>
-
-  <p class="text-warning fs-3 text-center">შეიყვანეთ ოთხნიშნა ციფრი რომელიც გამოგეგზავათ მობილურზე:
-    <!-- {{request.session.phone}} -->
-  </p>
   </div>
-  
-
-</div>
-  </script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+    integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <!-- our Scripts -->
+  <script src="./assets/stars/js/js.js"></script>
+  <!-- Bootstrap js -->
   <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    $('.digit-group').find('input').each(function () {
-      $(this).attr('maxlength', 1);
-      $(this).on('keyup', function (e) {
-        var parent = $($(this).parent());
-
-        if (e.keyCode === 8 || e.keyCode === 37) {
-          var prev = parent.find('input#' + $(this).data('previous'));
-
-          if (prev.length) {
-            $(prev).select();
-          }
-        } else if ((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
-          var next = parent.find('input#' + $(this).data('next'));
-
-          if (next.length) {
-            $(next).select();
-          } else {
-            if (parent.data('autosubmit')) {
-              parent.submit();
-            }
-          }
-        }
-      });
-    });
-
-    function isInputNumber(evt) {
-      var ch = String.fromCharCode(evt.which);
-      if (!(/[0-9]/.test(ch))) {
-        evt.preventDefault();
-      }
-    }
-  </script>
 
   <!-- {% include "quiz/footer.html" %} -->
   <!-- {% endblock %} -->
 
 </body>
-
 </html>
