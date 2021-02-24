@@ -72,3 +72,11 @@ margin-top: 135px;
     transform: scale(1.5);
     transition: all 0.3s ease-out;
 }
+.logo-social:hover{
+    transform: scale(1.5);
+    transition: all 0.3s ease-out;
+}
+.nav-links-hover:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
