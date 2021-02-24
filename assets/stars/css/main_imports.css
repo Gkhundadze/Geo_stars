@@ -13,4 +13,10 @@
 .ff-custom{
     font-family: "BPG Arial Caps", 'sans-serif';
 }
+.main_back{
+    background-image: url(../../images/covers/stars_main.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
