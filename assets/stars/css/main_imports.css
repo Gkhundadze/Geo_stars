@@ -1,14 +1,60 @@
 @import '../../dist/css/bootstrap.min.css';
 @import '//cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css';
-@import './studentlogin.css';
-@import './phone_otp.css';
-@import './footer.css';
 
 
 
 
 
 
+
+
+
+
+
+/* payment-page */
+.credo-color{
+    color: #ea4b37;
+}
+
+
+
+
+/* phone opt */
+.custom-height{
+    height: 100vh;
+}
+.sms-auth-input-props{
+    width: 50px;
+    height: 70px;
+    background-color: #5151cc;
+}
+.center-item-width{
+    width: 50px;
+}
+.bg-sms-auth-cover{
+    background-color: #0f0f1a;
+    background-image: url(../../images/stars_background_verify.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* students login */
+
+.auth-form-dimensions{
+    max-width: 430px;
+  }
+  Chrome, Safari, Edge, Opera
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
 
 
 /* for index page */
@@ -16,9 +62,14 @@
     font-family: "BPG Arial Caps", 'sans-serif';
 }
 .main_back{
-    background-image: url(../../images/covers/stars_main.png);
+    background-image: url(../../images/stars_main.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* footer */
+.footer-logo{
+    width: 50px;
 }
 
