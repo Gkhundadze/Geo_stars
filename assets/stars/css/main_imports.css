@@ -508,7 +508,7 @@ margin-top: 135px;
     max-width: 500px;
     width: 100%;
 }
-.stars-bg-color-header{
+.bg-color-header{
     background-color: #343148;
 }
 .stars-bg-footer-color{
@@ -537,7 +537,7 @@ margin-top: 135px;
 /* #d5ad36     orange*/ 
 
 .questions-back{
-    background-image: url(/assets/images/FAQ.png);
+    background-image: url(../../images/FAQ.png);
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
