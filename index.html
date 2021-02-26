@@ -3,6 +3,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="./assets/stars/css/main_imports.css">
 </head>
 
@@ -49,6 +50,70 @@
         </div>
       </div>
     </nav>
+
+
+
+                          <!-- main slider -->
+    <input type="radio" id="s-1" name="slider-control" checked="checked">
+    <input type="radio" id="s-2" name="slider-control">
+    <input type="radio" id="s-3" name="slider-control">
+    <div class="js-slider">
+      <figure class="js-slider_item img-1">
+        <div class="js-slider_img">
+          <img class="c-img-w-full" src="/assets/images/slider-1.png" alt="">
+        </div>
+        <figcaption class="wo-caption">
+          <!-- <h3 class="wo-h3"> -->
+            <!-- <div class="c-label">全点初公開</div> -->
+            <!-- <br class="view-sm mb-s">津和野藩伝来摺物</h3> -->
+            <!-- <ul class="wo-credit">
+        <li>摺物118枚 寛政元-12年 (1789-1800)</li>
+        <li>島根県立美術館(永田コレクション)</li>
+        <li>通期展示
+          <span class="c-txt-s">※4期に分けて全点を展示</span></li>
+      </ul> -->
+        </figcaption>
+      </figure>
+      <figure class="js-slider_item img-2">
+        <div class="js-slider_img">
+          <img class="c-img-w-full" src="/assets/images/slider-2.png" alt="">
+        </div>
+        <figcaption class="wo-caption">
+          <!-- <h3 class="wo-h3">「風流無くてなゝくせ」遠眼鏡</h3> -->
+          <!-- <ul class="wo-credit">
+        <li>大判 享和年間 (1801-04)</li>
+        <li>リー・ダークス・コレクション</li>
+        <li>展示期間：1月30日 (水) ～ 2月18日 (月)</li>
+      </ul> -->
+        </figcaption>
+      </figure>
+      <figure class="js-slider_item img-3">
+        <div class="js-slider_img">
+          <img class="c-img-w-full" src="/assets/images/slider-3.png" alt="">
+        </div>
+        <figcaption class="wo-caption">
+          <!-- <h3 class="wo-h3">「風流無くてなゝくせ」ほおずき</h3>
+      <ul class="wo-credit">
+        <li>大判 享和年間 (1801-04)</li>
+        <li>米・個人蔵</li>
+        <li>展示期間：1月30日 (水) ～ 2月18日 (月)</li>
+      </ul> -->
+        </figcaption>
+      </figure>
+      <div class="js-slider_nav">
+        <label class="js-slider_nav_item s-nav-1 prev" for="s-3"></label>
+        <label class="js-slider_nav_item s-nav-1 next" for="s-2"></label>
+        <label class="js-slider_nav_item s-nav-2 prev" for="s-1"></label>
+        <label class="js-slider_nav_item s-nav-2 next" for="s-3"></label>
+        <label class="js-slider_nav_item s-nav-3 prev" for="s-2"></label>
+        <label class="js-slider_nav_item s-nav-3 next" for="s-1"></label>
+      </div>
+      <div class="js-slider_indicator">
+        <div class="js-slider-indi indi-1"></div>
+        <div class="js-slider-indi indi-2"></div>
+        <div class="js-slider-indi indi-3"></div>
+      </div>
+    </div>
   </header>
   <main class="main_back">
     <section id="section-jumbotron " class="mb-0 jumbotron-fluid d-flex justify-content-center align-items-center">
@@ -75,61 +140,64 @@
         </div>
         <div class="row">
           <div class="col-md-4 my-2">
-            <div class="card h-100 mb-4">
-              <div class="card-header">
-                <h5 class="card-title m-0 p-0 font-weight-bolder text-card-custom-color">სიახლის სათაური</h5>
+            <div class="card card-register h-100 mb-4">
+              <div class="card-header bg-light">
+                <h5 class="card-title m-0 p-0 font-weight-bolder text-card-custom-color">რეგისტრაცია</h5>
               </div>
-              <div class="card-body text-left">
-                <p class="card-text text-light fs-2">სიახლის ტექსტი</p>
+              <div class="card-body card-register text-left">
+                <br>
+                <!-- <p class="card-text text-light fs-2">სიახლის ტექსტი</p> -->
                 <!-- <span class="font-lead-base font-weight-bold text-muted">20% Off!</span> -->
                 <!-- <div class="promotion-promo">$ 11.5</div> -->
-                <div class="promotion-price">
+                <!-- <div class="promotion-price">
                   <div class="promotion-price-desc">Now</div>
                   <div class="promotion-price-text">$ 9.5</div>
-                </div>
+                </div> -->
               </div>
-              <div class="card-footer"><a href="#" class="btn btn-warning">რეგისტრაცია</a></div>
+              <div class="card-footer text-end"><a href="#" class="btn btn-warning">რეგისტრაცია</a></div>
             </div>
           </div>
-  
+
           <div class="col-md-4 my-2">
-            <div class="card h-100 mb-4">
-              <div class="card-header">
-                <h5 class="card-title m-0 p-0 font-weight-bolder text-card-custom-color">სიახლის სათაური</h5>
+            <div class="card card-subjects h-100 mb-4">
+              <div class="card-header bg-light">
+                <h5 class="card-title m-0 p-0 font-weight-bolder text-card-custom-color text-nowrap">საგნები და განრიგი
+                </h5>
               </div>
-              <div class="card-body text-left">
-                <p class="card-text text-light fs-2">სიახლის ტექსტი</p>
+              <div class="card-body card-subjects text-left"><br>
+                <!-- <p class="card-text text-light fs-2">სიახლის ტექსტი</p> -->
                 <!-- <span class="font-lead-base font-weight-bold text-muted">20% Off!</span> -->
                 <!-- <div class="promotion-promo">$ 22.23</div> -->
-                <div class="promotion-price">
+                <!-- <div class="promotion-price">
                   <div class="promotion-price-desc">Now</div>
                   <div class="promotion-price-text">$ 20.23</div>
-                </div>
+                </div> -->
               </div>
-              <div class="card-footer"><a href="#" class="btn btn-warning">რეგისტრაცია</a></div>
+              <div class="card-footer text-end"><a href="#" class="btn btn-warning">სრულად</a></div>
             </div>
           </div>
-  
-          <div class="col-md-4 my-2">
-            <div class="card h-100 mb-4">
-              <div class="card-header">
-                <h5 class="card-title m-0 p-0 font-weight-bolder text-card-custom-color">სიახლის სათაური</h5>
+
+          <div class="col-md-4 my-2 ">
+            <div class="card h-100 mb-4 card-payment">
+              <div class="card-header bg-light">
+                <h5 class="card-title m-0 p-0 font-weight-bolder text-card-custom-color">გადახდა</h5>
               </div>
-              <div class="card-body text-left">
-                <p class="card-text text-light fs-2">სიახლის ტექსტი</p>
+              <div class="card-body text-left"><br>
+                <!-- <p class="card-text text-light fs-2">სიახლის ტექსტი</p> -->
                 <!-- <span class="font-lead-base font-weight-bold text-muted">20% Off!</span> -->
                 <!-- <div class="promotion-promo">$ 12.2</div> -->
-                <div class="promotion-price">
+                <!-- <div class="promotion-price">
                   <div class="promotion-price-desc">Now</div>
                   <div class="promotion-price-text">$ 10.2</div>
-                </div>
+                </div> -->
               </div>
-              <div class="card-footer"><a href="#" class="btn btn-warning">რეგისტრაცია</a></div>
+              <div class="card-footer text-end"><a href="#" class="btn btn-warning">სრულად</a></div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
 

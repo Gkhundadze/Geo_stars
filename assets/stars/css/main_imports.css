@@ -77,11 +77,28 @@ body {
     transform: translate(2.5px, 17.5px) scale(1.15);
     transform-origin: center right;
 }
-.card-body {
-    background-image: url(/assets/images/test-cover.png);
+.card-payment{
+    background-image: url(/assets/images/payment.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 330px !important;
+}
+.card-register{
+    background-image: url(/assets/images/register.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 330px !important;
+}
+.card-subjects{
+    background-image: url(/assets/images/subjects.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 330px !important;
+}
+.card-body {
     position: relative;
     z-index: 0;
     overflow: hidden;
@@ -163,6 +180,187 @@ body {
     font-weight: 900;
     text-transform: uppercase;
 }
+
+
+
+
+
+
+
+/* main slider */
+  input[type="radio"] {
+    display: none;
+  }
+  .js-slider {
+    position: relative;
+    /* max-width: 100%; */
+    width: 100%;
+    height: 50vh;
+    margin: 0 auto;
+  }
+  .js-slider_item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 3rem;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: right center;
+    transform: translate3d(0%, 0%, 0) rotateY(30deg) scaleX(0.95);
+    transition: all 1s ease,transform 1s cubic-bezier(0.43, 0.28, 0.51, 1);
+  }
+  #s-1:checked ~ .js-slider .js-slider_item.img-1,
+  #s-2:checked ~ .js-slider .js-slider_item.img-2,
+  #s-3:checked ~ .js-slider .js-slider_item.img-3 {
+    opacity: 1;
+    visibility: visible;
+    transform-origin: left center;
+    transform: translate3d(0, 0, 0) rotateY(0deg) scaleX(1);
+  }
+  .js-slider_img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .c-img-w-full {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  .c-img-h-full {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  figcaption {
+    display: block;
+  }
+  .wo-h3 {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e60012;
+  }
+  .c-label {
+    display: inline-block;
+    color: #eee;
+    background-color: rgba(139,0,10,0.9);
+    line-height: 1;
+    padding: 0.5em 0.9em;
+    margin-right: 0.5em;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .view-sm {
+    display: none;
+  }
+  .js-slider_nav {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    transform: translate3d(0, -50%, 0);
+  }
+  .js-slider_nav_item.prev {
+    left: 0;
+  }
+  .js-slider_nav_item.next {
+    right: 0;
+    transform: rotateY(180deg);
+  }
+  .js-slider_nav_item {
+    position: absolute;
+    display: none;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #343148;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .js-slider_nav_item:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 1rem;
+    top: 55%;
+    width: 1rem;
+    height: 1px;
+    background-color: #343148;
+    transform-origin: left bottom;
+    transform: translate3d(0, -50%, 0) rotate(-45deg);
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  /* #343148     dark*/
+/* #d5ad36     orange*/ 
+  .js-slider_nav_item:before:hover {
+     /* transform: translate3d(-30%, 0, 0); */
+  }
+  .js-slider_nav_item.next:hover {
+     /* transform: rotateY(180deg) translate3d(-30%, 0, 0); */
+
+  }
+  .js-slider_nav_item:hover:before {
+    transform: translate3d(0, -50%, 0) rotate(-30deg);
+  }
+  .js-slider_nav_item:after {
+    content: "";
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 2rem;
+    height: 1px;
+    background-color: #e60012;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  #s-1:checked ~ .js-slider .js-slider_nav .s-nav-1,
+  #s-2:checked ~ .js-slider .js-slider_nav .s-nav-2,
+  #s-3:checked ~ .js-slider .js-slider_nav .s-nav-3 {
+    display: block;
+  }
+  .js-slider_indicator {
+    position: absolute;
+    left: 0;
+    top: 63%;
+    width: 100%;
+    text-align: center;
+  }
+  .js-slider-indi {
+    position: relative;
+    display: inline-block;
+    padding: 2rem;
+    cursor: pointer;
+  }
+  .js-slider-indi:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background: #e60012;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  .js-slider-indi:hover:after {
+    transform: translate3d(-50%, -50%, 0) scale(1.5);
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  #s-1:checked ~ .js-slider .js-slider_indicator .indi-1:after,
+  #s-2:checked ~ .js-slider .js-slider_indicator .indi-2:after,
+  #s-3:checked ~ .js-slider .js-slider_indicator .indi-3:after {
+    transform: translate3d(-50%, -50%, 0) scale(2.5);
+  }
 
 
 
@@ -319,6 +517,12 @@ margin-top: 135px;
 .stars-color{
     color: #343148 !important;
 }
+.stars-bg-dark{
+    background-color: #343148;
+}
+.stars-bg-orange{
+    background-color: #d5ad36 !important;
+}
 .stars-color-2{
     color: #d5ad36;
 }
@@ -326,15 +530,29 @@ margin-top: 135px;
     line-height: 2;
     font-weight: bold;
 }
+.stars-opa{
+    opacity: 0.95;
+}
 /* #343148     dark*/
 /* #d5ad36     orange*/ 
 
 .questions-back{
-    /* background-image: url(/assets/images/ask.jpg); */
-    background-size: cover;
-    background-position: center;
+    background-image: url(/assets/images/FAQ.png);
+    background-size: contain;
+    background-position: top;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 960px;
     
 }
+.star-question-pos{
+    position: absolute;
+    right: 12%;
+}
 
+/* responsive for slider */
+@media only screen and (max-width: 540px){
+    .c-img-w-full{
+        height: 100% !important;
+        width: auto !important;
+    }
+}
