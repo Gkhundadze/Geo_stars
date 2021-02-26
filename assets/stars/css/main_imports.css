@@ -1,5 +1,195 @@
 @import '../../dist/css/bootstrap.min.css';
 @import '//cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800%7CRaleway:100,200,300,400,600,700,800,900%7CMontserrat:100,200,300,400,500,600,700,800,900');
+.box-shadow {
+    box-shadow: 0px 0px 18px -3px rgba(143, 143, 143, .50);
+}
+.card:hover {
+    box-shadow: 0px 0px 20px -3px rgba(143, 143, 143, .75);
+}
+.box-shadow-dark {
+    box-shadow: 3px 3px 11px -3px rgba(0, 0, 0, .25);
+}
+body {
+    /* background-color: yellow; */
+    font-family: 'Open Sans', Arial, Verdana;
+}
+.text-card-custom-color{
+    color: #343148;
+}
+
+.font-weight-bolder {
+    font-weight: 900;
+}
+.display-1, .display-2, .display-3, .display-4 {
+    font-weight: 900;
+}
+.heading-big {
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0.15rem 0;
+    line-height: 1.2;
+    font-size: 2rem;
+    transition: color 0.5s ease-in, border-color 0.5s ease-in-out;
+}
+.heading-big-square {
+    padding: 1rem 1rem;
+    border: 10px solid red;
+    margin: 0.5rem auto 1rem auto;
+}
+.heading-big:hover {
+    color: #f90;
+    border-color: #f90;
+}
+.news-title-fs{
+    font-size: 40px;
+}
+.card {
+    transition: 0.5s ease;
+    border-radius: 0;
+    transform: perspective(3em) rotateX(0deg) rotateY(-1.175deg) rotateZ(-1deg);
+    opacity: 0.9;
+}
+.card-header {
+    border-radius: 0;
+}
+.card-footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.card-header, .card-footer {
+    transition: 0.5s ease;
+}
+.card:hover {
+    border-color: #343148;
+    transform: perspective(0em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.card:hover .card-header, .card:hover .card-footer {
+    color: #ba8b00;
+    border-color: #ffc107;
+}
+.card:hover .promotion-promo {
+    transform: scale(1.175) translateY(2.5px);
+    transform-origin: left center;
+}
+.card:hover .promotion-price {
+    transform: translate(2.5px, 17.5px) scale(1.15);
+    transform-origin: center right;
+}
+.card-body {
+    background-image: url(/assets/images/test-cover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.card .btn {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.promotion-promo {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #ffc107;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    transition: 0.25s linear;
+}
+.promotion-price {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #ffc107;
+    width: 92px;
+    height: 92px;
+    padding-bottom: 0rem;
+    padding-top: 1.25rem;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    border-radius: 5rem;
+    color: #fff;
+    z-index: -1;
+    transform: translate(5px, 27.5px) rotate(-9deg);
+    border: 1px dashed #fff;
+    transition: 0.25s linear;
+    line-height: 1.15;
+}
+.promotion-price-desc {
+    padding: 0;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    display: block;
+}
+.promotion-price-text {
+    padding: 0;
+    margin: 0 auto;
+    font-weight: 900;
+}
+.card-animate {
+    counter-reset: section;
+}
+.card-animate .card-body:before {
+    transition: 0.5s ease;
+    counter-increment: section;
+    content: "" counter(section) "";
+    display: block;
+    font-size: 15rem;
+    font-weight: 900;
+    position: absolute;
+    bottom: 5rem;
+    line-height: 0;
+    left: -0.85rem;
+    padding: 0;
+    margin: 0;
+    color: rgba(0, 0, 0, .10);
+    z-index: 0;
+}
+.card-animate .card:hover .card-body:before {
+    transform: translate(10px, -10px);
+}
+.card-animate .card-text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.card-animate .card-title {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -50,18 +240,21 @@
     font-family: "BPG Arial Caps", 'sans-serif';
 }
 .main_back{
-    background-image: url(../../images/stars_main.png);
+    background-image: url(../../images/backgound-v1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* .news-card-section{
+
+} */
 
 /* footer */
 footer{
 margin-top: 135px;
 }
 .footer-logo{
-    width: 50px;
+    width: 60px;
 }
 
 .logo-hover:hover{
@@ -73,6 +266,9 @@ margin-top: 135px;
     transition: all 0.3s ease-out;
 }
 /* social icon colors */
+.text-fb{
+    color: #343148;;
+}
 .text-fb:hover{
     color: #4267B2 !important;
     /* background-color: #fff; */
@@ -88,6 +284,7 @@ margin-top: 135px;
 .nav-links-hover:hover{
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
+    
 }
 
 /* contactus */
@@ -113,3 +310,31 @@ margin-top: 135px;
     max-width: 500px;
     width: 100%;
 }
+.stars-bg-color-header{
+    background-color: #343148;
+}
+.stars-bg-footer-color{
+    background-color: #343148;
+}
+.stars-color{
+    color: #343148 !important;
+}
+.stars-color-2{
+    color: #d5ad36;
+}
+.stars-btn-large{
+    line-height: 2;
+    font-weight: bold;
+}
+/* #343148     dark*/
+/* #d5ad36     orange*/ 
+
+.questions-back{
+    /* background-image: url(/assets/images/ask.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    
+}
+
