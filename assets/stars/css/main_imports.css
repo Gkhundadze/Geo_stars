@@ -6,10 +6,6 @@
 
 
 
-body{
-
-    padding-top: 76px;
-}
 /* payment-page */
 .credo-color{
     color: #ea4b37;
@@ -76,7 +72,44 @@ margin-top: 135px;
     transform: scale(1.5);
     transition: all 0.3s ease-out;
 }
+/* social icon colors */
+.text-fb:hover{
+    color: #4267B2 !important;
+    /* background-color: #fff; */
+    /* padding: 2px; */
+}
+.text-you:hover{
+    color: #FF0000 !important;
+}
+.text-insta:hover{
+    color: #E1306C !important;
+}
+
 .nav-links-hover:hover{
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
+}
+
+/* contactus */
+.contactus-section{
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contactus-input-width{
+    max-width: 400px;
+    width: 50%;
+}
+.send-feedback-button{
+    width: 130px;
+}
+
+/* about page */
+.about-section{
+    margin-top: 76px;
+}
+.about-cover-img-width{
+    max-width: 500px;
+    width: 100%;
 }
