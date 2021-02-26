@@ -349,7 +349,7 @@ body {
     width: 1rem;
     height: 1rem;
     border-radius: 1rem;
-    background: #e60012;
+    background: #d5ad36;
     transform: translate3d(-50%, -50%, 0);
   }
   .js-slider-indi:hover:after {
