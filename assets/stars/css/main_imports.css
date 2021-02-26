@@ -78,21 +78,21 @@ body {
     transform-origin: center right;
 }
 .card-payment{
-    background-image: url(assets/images/payment.png);
+    background-image: url('assets/images/payment.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 330px !important;
 }
 .card-register{
-    background-image: url(assets/images/register.png);
+    background-image: url('assets/images/register.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 330px !important;
 }
 .card-subjects{
-    background-image: url(assets/images/subjects.png);
+    background-image: url('assets/images/subjects.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
