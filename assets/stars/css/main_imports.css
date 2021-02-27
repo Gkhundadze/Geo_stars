@@ -4,7 +4,10 @@
 body {
     font-family: 'Open Sans', Arial, Verdana;
 }
-
+/* reset */
+.custom-height-res{
+    height: 100vh;
+}
 /* navbar */
 .navbar-toggler{
     /* background-color: #d5ad36 !important; */
@@ -564,4 +567,5 @@ footer{
         height: 100% !important;
         width: auto !important;
     }
+ 
 }
