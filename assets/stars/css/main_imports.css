@@ -4,7 +4,12 @@
 body {
     font-family: 'Open Sans', Arial, Verdana;
 }
-/* for index page */
+
+/* navbar */
+.navbar-toggler{
+    /* background-color: #d5ad36 !important; */
+}
+/* main page */
 .ff-custom{
     font-family: "BPG Arial Caps", 'sans-serif';
 }
@@ -481,7 +486,7 @@ input[type="radio"] {
     background-color: #d5ad36 !important;
 }
 .stars-color-2{
-    color: #d5ad36;
+    color: #d5ad36 !important;
 }
 .stars-btn-large{
     line-height: 3;
