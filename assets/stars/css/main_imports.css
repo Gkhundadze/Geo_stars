@@ -1,5 +1,5 @@
 @import '../../dist/css/bootstrap.min.css';
-@import '//cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css';
+/* @import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css"); */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800%7CRaleway:100,200,300,400,600,700,800,900%7CMontserrat:100,200,300,400,500,600,700,800,900');
 body {
     font-family: 'Open Sans', Arial, Verdana;
@@ -11,7 +11,7 @@ body {
 }
 /* main page */
 .ff-custom{
-    font-family: "BPG Arial Caps", 'sans-serif';
+    font-family: "BPG Nino Mtavruli", sans-serif;
 }
 .main_back{
     background-image: url(../../images/backgound-v1.png);
