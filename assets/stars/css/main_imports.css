@@ -503,11 +503,11 @@ input[type="radio"] {
 /* #d5ad36     orange*/ 
 
 .questions-back{
-    background-image: url(../../images/FAQ.png);
+    /* background-image: url(../../images/FAQ.png);
     background-size: contain;
     background-position: top;
-    background-repeat: no-repeat;
-    height: 960px;
+    background-repeat: no-repeat; */
+    height: 100vh;
     
 }
 .star-question-pos{
