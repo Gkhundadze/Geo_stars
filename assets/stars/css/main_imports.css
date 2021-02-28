@@ -325,6 +325,8 @@ body {
 .stars-btn-large{
     line-height: 3;
     font-weight: bold;
+    padding: 1rem 6rem !important;
+    font-size: x-large !important;
 }
 .stars-opa{
     opacity: 0.95;
