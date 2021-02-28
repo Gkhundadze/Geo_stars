@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <!-- {% load static %} -->
 <html lang="ka">
+
 <head>
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="სასკოლო ოლიმპიადა">
   <meta name="keywords" content="სასკოლო, საბავშვო, ტესტირება, სეტიფიკატები">
-  <meta name="google" content="notranslate"/>
+  <meta name="google" content="notranslate" />
   <title>Stars Geo</title>
-  <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
   <link rel="shortcut icon" href="assets/images/title-logo.png" />
+  <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
+<link rel="stylesheet" href="assets/stars/css/main_slider.css">
   <link rel="stylesheet" href="assets/stars/css/main_imports.css">
 </head>
 
@@ -56,50 +58,26 @@
         </div>
       </div>
     </nav>
-
-
-
-                          <!-- main slider -->
-    <input type="radio" id="s-1" name="slider-control" checked="checked">
-    <input type="radio" id="s-2" name="slider-control">
-    <input type="radio" id="s-3" name="slider-control">
-    <div class="js-slider">
-      <figure class="js-slider_item img-1">
-        <div class="js-slider_img">
-          <img class="c-img-w-full" src="assets/images/first-slider-img-en.png" alt="">
-        </div>
-        <figcaption class="wo-caption">
-        </figcaption>
-      </figure>
-      <figure class="js-slider_item img-2">
-        <div class="js-slider_img">
-          <img class="c-img-w-full" src="assets/images/slider-2.png" alt="">
-        </div>
-        <figcaption class="wo-caption">
-
-        </figcaption>
-      </figure>
-      <figure class="js-slider_item img-3">
-        <div class="js-slider_img">
-          <img class="c-img-w-full" src="assets/images/slider-3.png" alt="">
-        </div>
-        <figcaption class="wo-caption">
-
-        </figcaption>
-      </figure>
-      <div class="js-slider_nav">
-        <label class="js-slider_nav_item s-nav-1 prev" for="s-3"></label>
-        <label class="js-slider_nav_item s-nav-1 next" for="s-2"></label>
-        <label class="js-slider_nav_item s-nav-2 prev" for="s-1"></label>
-        <label class="js-slider_nav_item s-nav-2 next" for="s-3"></label>
-        <label class="js-slider_nav_item s-nav-3 prev" for="s-2"></label>
-        <label class="js-slider_nav_item s-nav-3 next" for="s-1"></label>
+    <!--Slider-->
+    <div id="slider">
+      <div class="slide">
+        <img src="assets/images/first-slider-img-ka.jpg">
       </div>
-      <div class="js-slider_indicator">
-        <div class="js-slider-indi indi-1"></div>
-        <div class="js-slider-indi indi-2"></div>
-        <div class="js-slider-indi indi-3"></div>
+
+      <div class="slide">
+        <img
+          src="assets/images/first-slider-img-en.png">
       </div>
+
+      <!--Controlling arrows-->
+      <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </span>
+      <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right"
+          aria-hidden="true"></i>
+      </span>
+    </div>
+    <div id="dots-con">
+      <span class="dot"></span><span class="dot"></span>
     </div>
   </header>
   <div class="main_back">
@@ -213,7 +191,7 @@
             </a>
           </li>
           <li>
-            <a href="" class="text-decoration-none stars-color-2" >
+            <a href="" class="text-decoration-none stars-color-2">
               კონტაქტი
             </a>
           </li>
@@ -222,8 +200,10 @@
     </div>
   </footer>
   <!-- {% include "quiz/footer.html" %} -->
+  <script src="assets/stars/js/main_slider.js"></script>
   <script src="https://kit.fontawesome.com/753ea48368.js" crossorigin="anonymous"></script>
   <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 
 </html>
