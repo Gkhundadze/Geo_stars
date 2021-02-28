@@ -198,6 +198,9 @@ body {
     font-weight: 900;
     text-transform: uppercase;
 }
+.row{
+    width: 97% !important;
+}
 
 
 
@@ -271,10 +274,6 @@ body {
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-  }
-  /* Firefox */
-  input[type=number] {
-    -moz-appearance: textfield;
   }
 
 
@@ -387,14 +386,10 @@ footer{
         transition: all 0.3s ease-in-out;
         
     }
-
-    
-}
 /* responsive for slider */
 @media only screen and (max-width: 540px){
-    .c-img-w-full{
-        height: 100% !important;
-        width: auto !important;
+    .stars-btn-large{
+        padding: .5rem 3rem !important;
     }
  
 }
