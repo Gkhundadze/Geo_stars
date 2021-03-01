@@ -9,21 +9,17 @@
       text-decoration: none;
     }
 
-    .logo-hover:hover {
-      transform: scale(1.3);
-      transition: all 0.3s ease-out;
-    }
-
     body {
       margin: 0;
       padding: 0;
       font-family: "Gill Sans", sans-serif;
+      ;
     }
 
     header {
       position: fixed;
       background: #d5ad36;
-      padding: 8px;
+      padding: 20px;
       width: 100%;
       z-index: 1;
     }
@@ -36,8 +32,12 @@
       font-weight: 900;
     }
 
+    .left_area span {
+      color: #19B3D3;
+    }
+
     .logout_btn {
-      padding: 7px;
+      padding: 5px;
       background: #343148;
       text-decoration: none;
       float: right;
@@ -48,7 +48,6 @@
       font-weight: 600;
       color: #fff;
       transition: 0.5s;
-      border-radius: 5px;
 
     }
 
@@ -166,8 +165,7 @@
       <i style="left: 200px;margin-top: 17px;" class="fas fa-bars" id="sidebar_btn"></i>
     </label>
     <div class="left_area">
-      <a class="navbar-brand rounded " href="#"><img class="logo-hover" src="assets/images/stars.png"
-          alt="Geo Stars Logo" style="width: 50px;"></a>
+      <h3>Geo Stars</h3>
     </div>
     <div class="right_area">
       <a href="/logout" class="logout_btn">Logout</a>
@@ -176,22 +174,22 @@
   <!--header area end-->
   <!--sidebar start-->
   <div class="sidebar">
-    <!-- <center> -->
     <div class="center-div">
-      <img src="{% static " image/student.png" %}" class="profile_image" alt="profile-pic">
+      <img src="{% static " image/teacher.png" %}" class="profile_image" alt="">
       <h4>{{request.user.first_name}}</h4>
-      <h6 style="color: rgb(255, 255, 255);">( Student )</h6>
+      <h6 style="color: rgb(255, 255, 255);">( Teacher )</h6>
     </div>
-    <!-- </center> -->
-    <a href="/student/student-dashboard"><i class="fas fa-tachometer-alt"></i><span>მაგიდა</span></a>
-    <a href="/student/student-exam"><i class="fas fa-book"></i><span>გამოცდა</span></a>
-    <a href="/student/student-marks"><i class="fas fa-sort-numeric-up"></i><span>ქულები</span></a>
+    <a href="/teacher/teacher-dashboard"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
+    <a href="/teacher/teacher-exam"><i class="fas fa-book"></i><span>Exam</span></a>
+    <a href="/teacher/teacher-question"><i class="fas fa-question-circle"></i><span>Questions</span></a>
   </div>
   <!--sidebar end-->
   <!--content start-->
   <div class="content">
+    <br><br><br><br><br>
     <!-- {% block content %} -->
     <!-- {% endblock content %} -->
+    <br><br><br>
     <!-- {% include "quiz/footer.html" %} -->
   </div>
   <!--content end-->
