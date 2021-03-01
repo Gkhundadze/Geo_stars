@@ -127,47 +127,6 @@ body {
     font-weight: bold;
     text-transform: uppercase;
 }
-.promotion-promo {
-    font-weight: 700;
-    font-size: 1.15rem;
-    color: #ffc107;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: line-through;
-    transition: 0.25s linear;
-}
-.promotion-price {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: #ffc107;
-    width: 92px;
-    height: 92px;
-    padding-bottom: 0rem;
-    padding-top: 1.25rem;
-    text-align: center;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
-    border-radius: 5rem;
-    color: #fff;
-    z-index: -1;
-    transform: translate(5px, 27.5px) rotate(-9deg);
-    border: 1px dashed #fff;
-    transition: 0.25s linear;
-    line-height: 1.15;
-}
-.promotion-price-desc {
-    padding: 0;
-    margin: 0 auto;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    display: block;
-}
-.promotion-price-text {
-    padding: 0;
-    margin: 0 auto;
-    font-weight: 900;
-}
 .card-animate {
     counter-reset: section;
 }
