@@ -396,7 +396,6 @@ footer{
     .footer-logo{
         width: 60px;
     }
-    
     .logo-hover:hover{
         transform: scale(1.5);
         transition: all 0.3s ease-out;
