@@ -419,11 +419,18 @@ footer{
     .text-insta:hover{
         color: #E1306C !important;
     }
-    
+    .stars-bg-orange{
+        background-color: #d5ad36 !important;
+    }
+    .stars-profile-button{
+        background-color: #d5ad36 !important;
+    }
+    .stars-profile-button:hover{
+        color: #343148 !important;
+    }
     .nav-links-hover:hover{
         transform: scale(1.1);
         transition: all 0.3s ease-in-out;
-        
     }
 /* responsive for slider */
 @media only screen and (max-width: 540px){
