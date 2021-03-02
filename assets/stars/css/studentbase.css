@@ -26,6 +26,8 @@ a:link {
   }
   header {
     background: #d5ad36;
+    position: fixed;
+    top: 0;
     padding: 8px;
     width: 100%;
     z-index: 1;
@@ -49,10 +51,12 @@ a:link {
     background: #343148;
     position: fixed;
     left: 0;
+    margin-top: 76px;
     width: 250px;
     height: 100%;
     transition: 0.5s;
     transition-property: left;
+    z-index: 2;
   }
 
   .sidebar .profile_image {
@@ -119,6 +123,7 @@ a:link {
 
   .content {
     margin-left: 250px;
+    padding-top: 90px;
     /* background: url(background.png) no-repeat;
     background-position: center;
     background-size: cover; */
