@@ -432,6 +432,9 @@ footer{
         transform: scale(1.1);
         transition: all 0.3s ease-in-out;
     }
+    .register_choice{
+        width: 350px;
+    }
 /* responsive for slider */
 @media only screen and (max-width: 540px){
     .stars-btn-large{
