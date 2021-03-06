@@ -24,13 +24,39 @@
         left: 0;
         padding: 1.6rem
     }
+    .relative{
+        position: relative;
+    }
+    .title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #fff;
+        opacity: 0.8;
+        font-size: 24px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .first-title{
+        color: green;
+        font-weight: bold;
+    }
 </style>
 
 <body>
-    <div>
+    <div class="relative">
         <canvas id="canvas">Canvas not supported.</canvas>
         <div class="controller">
             <input type="range" id="count" value="49" style="display: none;">
+        </div>
+        <div class="textbox">
+            <div class="title">
+                <p class="first-title">თქვენ წარმატებით გაიარეთ გამოცდა</p>
+                <p class="second-title">თქვენი ქულაა <span>100</span> დან <span>60</span></p>
+                <p class="third-title">გილოცავთ !</p>
+            </div>
         </div>
     </div>
     
